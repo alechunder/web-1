@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <title>Moje kavárna</title>
+</head>
+<body>
+    <h1>Vítejte v mé kavárně "U dobré chuti"</h1><button onclick="darkmode()">Tmavý režim</button>
+    <p>Tady najdete nejlepší espresso ve městě!</p>
+
+    <h2>Naše menu</h2>
+    <ul>
+        <li>Espresso - 35 Kč</li>
+        <li>Cappucino - 45 Kč</li>
+        <li>Latté - 50 Kč</li>
+    </ul>    
+
+    <h2>Naše otevírací doba</h2>
+    <table border="1">
+        <tr><th id="tablehead">Den</th><th id="tablehead">Čas</th></tr>
+        <tr><td id="tabletext">Pondělí-Pátek</td><td>8:00-18:00</td></tr>
+        <tr><td>Sobota</td><td>9:00-16:00</td></tr>
+        <tr><td>Neděle</td><td>Zavřeno</td></tr>
+    </table>
+    <img src="/images/kava.jpg" alt="Káva">
+
+    <h2>Rezervace</h2>
+    <form>
+        <label>Jméno: <input type="text" id="name"></label><br>
+        <label>Email: <input type="email" id="email"></label><br>
+        <button type="submit">Odeslat</button>
+    </form>
+
+    <button onclick="pozdrav()">Klikni pro překvapení</button>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
